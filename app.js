@@ -15,13 +15,13 @@
   const STORAGE_KEY = 'wheel-of-fortune.v1';
 
   const defaultFields = () => ([
-    { id: cryptoId(), label: '500г',     color: '#ef4444' },
-    { id: cryptoId(), label: '1000г',    color: '#f59e0b' },
-    { id: cryptoId(), label: '500г',     color: '#10b981' },
-    { id: cryptoId(), label: '2000г',    color: '#3b82f6' },
-    { id: cryptoId(), label: '500г',     color: '#8b5cf6' },
-    { id: cryptoId(), label: '1000г',    color: '#ec4899' },
-    { id: cryptoId(), label: '500г',     color: '#14b8a6' },
+    { id: cryptoId(), label: '500₴',     color: '#ef4444' },
+    { id: cryptoId(), label: '1000₴',    color: '#f59e0b' },
+    { id: cryptoId(), label: '500₴',     color: '#10b981' },
+    { id: cryptoId(), label: '2000₴',    color: '#3b82f6' },
+    { id: cryptoId(), label: '500₴',     color: '#8b5cf6' },
+    { id: cryptoId(), label: '1000₴',    color: '#ec4899' },
+    { id: cryptoId(), label: '500₴',     color: '#14b8a6' },
     { id: cryptoId(), label: 'Перекрути', color: '#f97316' },
     { id: cryptoId(), label: '2х',       color: '#a855f7' },
   ]);
