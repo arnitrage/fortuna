@@ -221,7 +221,7 @@
   function fontForRadius(r, n) {
     // адаптивный размер шрифта: больше радиус → больше шрифт,
     // больше полей → меньше шрифт
-    const base = Math.max(10, Math.min(20, r * 0.05));
+    const base = Math.max(10, Math.min(20, r * 0.07));
     const factor = n <= 6 ? 1 : n <= 10 ? 0.85 : 0.7;
     return `600 ${Math.floor(base * factor)}px -apple-system, "Segoe UI", Roboto, sans-serif`;
   }
