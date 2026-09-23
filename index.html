@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<title>Колесо фортуны</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Колесо фортуны</h1>
+    <button id="toggleEditor" class="ghost" aria-haspopup="dialog" aria-expanded="false">
+      <span class="icon">⚙</span><span class="label">Настройки</span>
+    </button>
+  </header>
+
+  <main class="layout">
+    <section class="wheel-area">
+      <div class="wheel-wrap">
+        <canvas id="wheel" width="520" height="520" role="img" aria-label="Колесо фортуны"></canvas>
+      </div>
+      <div class="wheel-controls">
+        <p id="hint" class="wheel-hint">Торкніться, щоб обертати</p>
+        <div id="result" class="result" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Попап настроек -->
+  <div id="settingsModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="document">
+      <div class="modal-head">
+        <h2 id="settingsTitle">Настройки колеса</h2>
+        <button class="modal-close" data-close aria-label="Закрыть">×</button>
+      </div>
+      <div class="editor-actions modal-actions">
+        <button id="addField" class="primary">+ Добавить</button>
+        <button id="reset" class="ghost" title="Сбросить к примерам">Сброс</button>
+      </div>
+      <ul id="fieldsList" class="fields-list"></ul>
+      <p class="hint">Минимум 2 поля. Цвет выбирается автоматически, если не задан.</p>
+    </div>
+  </div>
+
+  <canvas id="confetti" class="confetti" aria-hidden="true"></canvas>
+
+  <script src="app.js?v=14"></script>
+</body>
+</html>
